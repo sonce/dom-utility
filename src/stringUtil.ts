@@ -1,4 +1,4 @@
-export default class StringUtil {
+export class StringUtil {
 	static format(str: string, ...args: string[]): string {
 		return str.replace(/{(\d+)}/g, function (match: string, number: number) {
 			return typeof args[number] != 'undefined' ? args[number] : match;

@@ -1,5 +1,5 @@
 // Element.matches() polyfill
-export default class ElementUtil {
+export class ElementUtil {
 	static matches(el: Element, selector: string): boolean {
 		if (Element.prototype.matches) return el.matches(selector);
 		else {
