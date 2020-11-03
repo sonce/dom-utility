@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "target": "es5",
+        "module": "ESNext",
+        // "removeComments": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "sourceMap": true,
+        // "listEmittedFiles": true,
+        "lib": [
+            "es2015",
+            "es2016",
+            "es2017",
+            "dom"
+        ],
+        "outDir": "dist/lib",
+        "baseUrl": ".",
+        "typeRoots": [
+            "./custom_types",
+            "./node_modules/@types"
+        ]
+        // "types": ["utility"]
+    },
+    "include": [
+        "src",
+        "test",
+        "custom_types"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

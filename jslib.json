@@ -1,0 +1,11 @@
+{
+    "name": "JS-Dom-Utility",
+    "npmname": "js-dom-utility",
+    "umdname": "jsdomutility",
+    "username": "ASheng",
+    "type": "ts",
+    "module": "umd,esm,commonjs",
+    "test": "mocha",
+    "lang": "zh",
+    "version": "1.6.0"
+}
