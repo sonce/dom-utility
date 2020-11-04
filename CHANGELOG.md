@@ -1,5 +1,9 @@
 # 变更日志
 
+## 0.1.8 / 2020-11-3
+
+- 修复getParent的bug
+  
 ## 0.1.5 / 2020-11-3
 
 - 修复Typescript 的Type defition的问题

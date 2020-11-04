@@ -17,7 +17,7 @@ export class ElementUtil {
 		// Push each parent element to the array
 		for (; self && !document.isSameNode(self); self = self.parentNode as HTMLElement) {
 			if (selector) {
-				if (ElementUtil.matches(el, selector)) {
+				if (ElementUtil.matches(self, selector)) {
 					parents.push(self);
 				}
 				continue;
