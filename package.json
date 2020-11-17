@@ -1,6 +1,6 @@
 {
   "name": "js-dom-utility",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "DOM utility library",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
