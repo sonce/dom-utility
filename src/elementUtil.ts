@@ -43,4 +43,32 @@ export class ElementUtil {
 		const childrens = Array.from(el.parentElement.children);
 		return childrens.indexOf(el);
 	}
+
+	/**
+	 * 调换两个元素
+	 * @param element1 调换位置的元素1
+	 * @param element2 调换位置的元素2
+	 */
+	static swap(element1: Element, element2: Element): void {
+		// save the location of element2
+		const parent2 = element1.parentNode;
+		const next2 = element2.nextSibling;
+		// special case for element1 is the next sibling of element2
+		if (next2 === element1) {
+			// just put element1 before element2
+			parent2.insertBefore(element1, element2);
+		} else {
+			// insert element2 right before element1
+			element1.parentNode.insertBefore(element2, element1);
+
+			// now insert element1 where element2 was
+			if (next2) {
+				// if there was an element after element2, then insert element1 right before that
+				parent2.insertBefore(element1, next2);
+			} else {
+				// otherwise, just append as last child
+				parent2.appendChild(element1);
+			}
+		}
+	}
 }

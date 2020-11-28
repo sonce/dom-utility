@@ -7,5 +7,5 @@
     "module": "umd,esm,commonjs",
     "test": "mocha",
     "lang": "zh",
-    "version": "0.1.9"
+    "version": "0.1.10"
 }
